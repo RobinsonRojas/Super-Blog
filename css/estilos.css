@@ -44,3 +44,11 @@ body {
     background:whitesmoke;
     padding: 1em;
 }
+
+#footer {
+    background: #777;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5em;
+}
