@@ -46,3 +46,16 @@ WHERE distance >= 300 && distance <= 400
 GROUP BY origin, dest
 HAVING COUNT(origin)/10 > 5000
 ORDER BY origin asc
+
+
+-- query 3
+select f.origin, f.dest AS Destino, (COUNT(f.origin)/10), SUM(p.seats)/10
+from flights as f
+
+INNER JOIN planes as p
+ON f.tailnum = p.tailnum
+
+WHERE f.distance >= 300 && f.distance <= 400
+GROUP BY f.origin, f.dest
+HAVING COUNT(f.origin)/10 > 5000
+ORDER BY SUM(p.seats)/10 desc
