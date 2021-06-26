@@ -36,12 +36,12 @@ body {
     margin: 0 auto;
 }
 
-#container h1{
+#container h1 {
     font-size: 20px;
 }
 
 #post {
-    background:whitesmoke;
+    background: whitesmoke;
     padding: 1em;
 }
 
